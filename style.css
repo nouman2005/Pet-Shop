@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* background-color: rgb(221, 223, 231); */
+    background-image: url("https://wallpapercave.com/wp/wp2447017.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loader h1 {
+    font-size: 100px;
+    font-weight: 100;
+
+}
+
+.loader p {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+#main {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    padding: 3vw 8vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #DDDBD9;
+}
+
+.nav-left h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-mid {
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+.nav-mid a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-mid a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right i {
+    font-size: 22px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    width: 100%;
+    height: 85vh;
+    padding: 0vw 8vw;
+    position: relative;
+    /* background-color: rgba(255, 0, 0, 0.167); */
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.back img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.top {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12vw 8vw;
+}
+
+.top h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0px 30px;
+}
+
+.hero .elem {
+    position: relative;
+    height: 11vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.hero .elem h1:nth-child(1) {
+    top: 0;
+}
+
+.hero .elem h1 {
+    position: absolute;
+    font-size: 12vw;
+    font-weight: 500;
+    letter-spacing: .9px;
+    font-family: "Kajiro";
+    top: 100%;
+    left: 0;
+    padding: 0px 30px;
+}
+
+.pet-category {
+    width: 100%;
+    height: 60vh;
+    /* background-color: #DDDBD9; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 8vw;
+}
+
+.pet-category .box {
+    width: 28%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#box-1 {
+    background-image: url("https://plus.unsplash.com/premium_photo-1668606763482-8dd2042c934e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#box-2 {
+    background-image: url("https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#box-3 {
+    background-image: url("https://images.unsplash.com/photo-1620694563886-c3a80ec55f41?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box h3 {
+    font-size: 55px;
+    color: black;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 35px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+
+button a{
+    text-decoration: none;
+    color: #000;
+}
+
+button a:hover{
+    color: #fff;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    scale: 1.2;
+}
+
+.second-hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    /* padding-top: 150px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10vw;
+    color: #fff;
+}
+
+.second-hero h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.pets {
+    position: relative;
+    width: 100%;
+    padding: 3vw 8vw;
+    border-bottom: 1px solid white;
+}
+
+.pets h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.pets img {
+    position: absolute;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+}
+
+.selling {
+    width: 85%;
+    min-height: 70vh;
+    /* background-color: #3f3737; */
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selling .sells {
+    width: 25%;
+    height: 350px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 0px auto;
+}
+
+.sells .img {
+    width: 100%;
+    height: 60%;
+    /* background-color: red; */
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sells .text {
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all ease 1s;
+}
+
+.text h2:hover {
+    scale: 1.2;
+    text-decoration: underline;
+}
+
+.sells .amount {
+    width: 100%;
+    height: 20%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.amount p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.amount input {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #DDDBD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+}
